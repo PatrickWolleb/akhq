@@ -15,6 +15,6 @@ on:
 
 jobs:
   test_runner:
-    runs-on: [self-hosted, pat-runner]
+    runs-on: [ self-hosted, pdp-dev-builder ]
     steps:
       - run: echo "hello runner!"
