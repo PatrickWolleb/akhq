@@ -14,6 +14,10 @@ on:
       - dev
 
 jobs:
+  test_runner:
+    runs-on: [self-hosted, pat-runner]
+    steps:
+      - run: echo "hello runner!"
   check:
     name: Check
     runs-on: ubuntu-latest
